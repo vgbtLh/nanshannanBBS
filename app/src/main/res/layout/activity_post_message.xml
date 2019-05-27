@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/div_white"
+    android:orientation="vertical"
+    tools:context=".PostMessage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/ic_action_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="发帖"
+            android:textColor="@color/text_top"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/btn_frame_circle"
+            android:text="发表"
+            android:textColor="@color/bg_white" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/div_white"/>
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_white"
+        android:layout_marginLeft="10dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/bg_black"
+        android:hint="请写下你的标题并以问号结尾？"
+        android:textColorHint="@color/text_top"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/div_white"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:background="@color/bg_white"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/bg_black"
+        android:textColorHint="@color/text_top"
+        android:hint="输入你要发表的内容" />
+
+
+</LinearLayout>
